@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Formulario</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="form">
+        <div>
+        </div>
+        <div class="form_cont">
+
+            <h1 class="titulo">Formulario de Registro</h1>
+            <label for="" class="estilo_letra"> Ingrese su Nombre:</label >
+            <input type="text" maxlength="50" id="nombre">
+            <label for="" class="estilo_letra">Ingrese su Apellido:</label >
+            <input type="text" maxlength="50" id="apellido">
+            <label for="id" class="id">Identificacion:</label >
+            <select name=""  class="selec" id="identificacion">
+                <option value=""></option>
+                <option value="CC">CC</option>
+                <option value="TI">TI</option>
+                <option value="RC">RC</option>
+                <option value="CE">CE</option>
+            </select>
+            <label for="num" class="estilo_letra">Numero:</label >
+            <input type="text" maxlength="10" id="numero"><br>
+            <div class="s">
+                <label for="" class="sexo">Genero:</label >
+                <br>
+                <input type="radio" name="sexo" id="masculino" value="a">Masculino
+                <input type="radio" name="sexo" id="femenino" value="i">Femenino
+                <input type="radio" name="sexo" id="otro" value="o">otro
+                <br>
+                <br>
+            </div>
+            <label for="FechaNac" class="estilo_letra">Fecha de Nacimiento:</label >
+            <input type="date"  name=" trip-start" value="" id="fecha" min="1900-01-01" max="2023-01-01">
+            <label class="estilo_letra"> Ingrese su correo: </label >
+            <input type="text" maxlength="50" id="correo"> <br>
+            <input type="button" value="Registrar" id="boton" onclick="guardar()">
+        </div>
+
+    </div>
+    <script src="formulario.js"></script>
+</body>
+
+</html>
